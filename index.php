@@ -13,10 +13,10 @@
     <nav class = "nav-menu-sup">
 
         <ul class = "ul-menu-sup">
-            <li><a href = "/">Listar</li>
-            <li><a href = "/">Cadastrar</li>
-            <li><a href = "/">Alterar</li>
-            <li><a href = "/">Remover</li>
+            <li><a href = "Screens/listar.php">Listar</a></li>
+            <li><a href = "Screens/cadastrar.php">Cadastrar</a></li>
+            <li><a href = "Screens/alterar.php">Alterar</a></li>
+            <li><a href = "Screens/remover.php">Remover</a></li>
         </ul>
 
     </nav>
