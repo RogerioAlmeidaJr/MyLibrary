@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-menu-sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9099A2;
+    height: 8vh;
+}
+
+.ul-menu-sup{
+    list-style: none;
+    display: flex;
+}
+
+.ul-menu-sup li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5D5D5;
+    height: 92vh;
+}
