@@ -30,7 +30,7 @@
                 <h2>Alterar</h2>
             </section>
 
-            <form class = "form-corpo">
+            <form class = "form-corpo" method = "post" action = "../Crud/alterarCadastro.php">
                 <div class = "div-form">
 
                 <label>ID</label>
@@ -51,7 +51,7 @@
                 <label>data de lançamento</label>
                 <input type = "date" id = "data" name = "data-livro" class = "form-input">
 
-                <button type = "submit" id = "cadastrar">Cadastrar</button>
+                <button type = "submit" id = "alterar">Alterar</button>
 
                 </div>
             </form>

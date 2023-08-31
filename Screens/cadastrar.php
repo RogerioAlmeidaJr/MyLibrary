@@ -9,8 +9,6 @@
 </head>
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
     <!-- Menu Superior -->
     <nav class = "nav-menu-sup">
 
@@ -32,7 +30,7 @@
                 <h2>Cadastrar</h2>
             </section>
             
-            <form class = "form-corpo" method="post" action="../Crud/inserir.php">
+            <form class = "form-corpo" method="post" action="../Crud/inserirCadastro.php">
                 <div class = "div-form">
 
                 <label>titulo</label>
