@@ -30,7 +30,7 @@
                 <h2>Remover</h2>
             </section>
 
-            <form class = "form-corpo">
+            <form class = "form-corpo" method = "post" action = "../Crud/removerCadastro.php">
                 <div class = "div-form">
 
                 <label>ID</label>
