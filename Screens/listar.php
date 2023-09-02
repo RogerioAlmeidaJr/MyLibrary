@@ -1,5 +1,13 @@
 <!-- Conexão ao BD -->
-<?php include("../Conection/conexao.php")?>
+<?php
+
+    include("../Conection/conexao.php");
+
+    $sql = "select * from livros order by id desc";
+
+    $result = $mysqli -> query($sql);
+
+?>
 
 <html>
 <head>
@@ -7,7 +15,7 @@
     <title>CRUD_Livraria_Listar</title>
     <link rel = "stylesheet" href = "../Style/style.css">
 </head>
-<body>
+<body bgcolor="#D5D5D5">
 
     <!-- Menu Superior -->
     <nav class = "nav-menu-sup">
@@ -22,9 +30,34 @@
     </nav>
 
     <!-- Corpo do site -->
-    <nav class = "nav-corpo">
+    <nav class = "nav-corpo-listar">
 
-        <a> PAG-LISTAR </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Lançamento</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+            while($dados_livro = mysqli_fetch_assoc($result)){
+                echo "<tr>";
+                echo "<td>".$dados_livro['id']."</td>";
+                echo "<td>".$dados_livro['nome']."</td>";
+                echo "<td>".$dados_livro['autor']."</td>";
+                echo "<td>".$dados_livro['quantidade']."</td>";
+                echo "<td>".$dados_livro['preco']."</td>";
+                echo "<td>".$dados_livro['data']."</td>";
+                echo "</tr>";
+            }
+        ?>
+        </tbody>
+    </table>
 
     </nav>
 
