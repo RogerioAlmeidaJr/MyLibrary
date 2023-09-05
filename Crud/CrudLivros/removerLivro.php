@@ -1,10 +1,12 @@
 <?php
 
-    include("../Conection/conexao.php");
+    include("../../Conection/conexao.php");
+    include("../CrudUsuario/protectSession.php");
 
+    $vIdUser = $_SESSION['id'];
     $vId = $_POST["id-livro"];
 
-    $sql = "delete from livros where id = '$vId'";
+    $sql = "delete from livros where idLivro = '$vId' and idUser = '$vIdUser'";
 
     $result = $mysqli -> query($sql) or trigger_error($mysqli -> error);
 
@@ -16,10 +18,10 @@
                         <h5 class="modal-title">Remover</h5>
                     </div>
                     <div class="modal-body">
-                        <p>Cadastro removido com sucesso</p>
+                        <p>Livro removido com sucesso</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="../Screens/remover.php"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
+                        <a href="../../Screens/remover.php"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
                     </div>
                 </div>
             </div>

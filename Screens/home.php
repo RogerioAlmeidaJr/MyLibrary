@@ -1,5 +1,9 @@
 <!-- Conexão ao BD -->
-<?php include("../Crud/CrudUsuario/protectSession.php")?>
+<?php 
+    
+    include("../Crud/CrudUsuario/protectSession.php");
+
+?>
 
 <html>
 <head>
@@ -7,7 +11,6 @@
     <title>MyLibrary</title>
     <link rel = "stylesheet" href = "../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
 </head>
 <body>
 
@@ -49,36 +52,20 @@
         <div class = "div-corpo">
 
             <section class = "up-titulo">
-                <h2>Alterar</h2>
+                <h2>Bem vindo</h2>
             </section>
 
-            <form class = "form-corpo" method="post" action="../Crud/CrudLivros/alterarLivro.php">
+            <form class = "form-corpo" method="post" action="../Crud/inserirCadastro.php">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">ID</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "id-livro" placeholder="insira o id do livro">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Título</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "titulo-livro" placeholder="insira o novo titulo do livro">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Autor</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "autor-livro" placeholder="insira o novo autor do livro">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Quantidade</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "qtd-livro" placeholder="insira a nova quantidade em estoque">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Preço</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "preco-livro" placeholder="insira o novo preço do livro">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Data</label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" name = "data-livro" placeholder="insira a nova data de lançamento">
-                </div>
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary" id = "alterar">Alterar</button>
+                    <label for="exampleFormControlInput1" class="form-label">ID de usuário:</label>
+                    <label for="exampleFormControlInput1" class="form-label"><?php echo $_SESSION['id']?></label>
+                    </br>
+                    <label for="exampleFormControlInput1" class="form-label">Nome de usuário:</label>
+                    <label for="exampleFormControlInput1" class="form-label"><?php echo $_SESSION['nome']?></label>
+                    </br>
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <label for="exampleFormControlInput1" class="form-label"><?php echo $_SESSION['email']?></label>
+                    <p align = "center"></br><a class="link-offset-2 link-underline link-underline-opacity-100" href="../Crud/CrudUsuario/logoutUsuario.php">Sair</a></p>
                 </div>
             </form>
         </div>

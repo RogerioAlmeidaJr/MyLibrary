@@ -7,7 +7,6 @@
     <title>MyLibrary</title>
     <link rel = "stylesheet" href = "../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
 </head>
 <body>
 
@@ -44,45 +43,42 @@
     </div>
     </nav>
 
-    <!-- Corpo do site -->
+    <!--Corpo do site-->
     <div class = "nav-corpo">
         <div class = "div-corpo">
 
             <section class = "up-titulo">
-                <h2>Alterar</h2>
+                <h2>Inserir</h2>
             </section>
 
-            <form class = "form-corpo" method="post" action="../Crud/CrudLivros/alterarLivro.php">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">ID</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "id-livro" placeholder="insira o id do livro">
-                </div>
+            <form class = "form-corpo" method="post" action="../Crud/CrudLivros/inserirLivro.php">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Título</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "titulo-livro" placeholder="insira o novo titulo do livro">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "titulo-livro" placeholder="insira o titulo do livro">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Autor</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "autor-livro" placeholder="insira o novo autor do livro">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "autor-livro" placeholder="insira o autor do livro">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Quantidade</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "qtd-livro" placeholder="insira a nova quantidade em estoque">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "qtd-livro" placeholder="insira a quantidade em estoque">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Preço</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "preco-livro" placeholder="insira o novo preço do livro">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name = "preco-livro" placeholder="insira o preço do livro">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Data</label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" name = "data-livro" placeholder="insira a nova data de lançamento">
+                    <input type="date" class="form-control" id="exampleFormControlInput1" name = "data-livro" placeholder="insira a data de lançamento">
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary" id = "alterar">Alterar</button>
+                    <button type="submit" class="btn btn-primary" id = "cadastrar">Cadastrar</button>
                 </div>
             </form>
         </div>
     </div>
+    
 
 </body>
 </html>
