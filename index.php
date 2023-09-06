@@ -32,6 +32,7 @@
                 <p></p>
                 <p align = "center"><a>Não possui um cadastro?</a></br><a class="link-offset-2 link-underline link-underline-opacity-100" href="Screens/cadastrar.php">Cadastrar</a></p>
             </form>
+            
         </div>
     </div>
 
