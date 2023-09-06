@@ -11,23 +11,56 @@
     $result = $mysqli -> query($sql) or trigger_error($mysqli -> error);
 
     if(mysqli_affected_rows($mysqli) > 0){?>
-        <div class="modal" id = "myModal" tabindex="-1">
-            <div class="modal-dialog">
+    <html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>MyLibrary</title>
+        <link rel = "stylesheet" href = "../../Style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="nav-corpo-log">
+            <div class="div-corpo">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Remover</h5>
-                    </div>
-                    <div class="modal-body">
-                        <p>Livro removido com sucesso</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="../../Screens/remover.php"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
-                    </div>
+
+                    <section class = "up-titulo">
+                        <h2>Remover</h2>
+                    </section>
+
+                    <p align = "center">Livro removido com sucesso</p>
+
+                    <p align="center"><a href="../../Screens/remover.php"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button></a></p>
                 </div>
             </div>
         </div>
+    </body>
+    </html>
     <?php
-    }else{
-        echo "Erro ao Remover dados";
+    }else{?>
+    <html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>MyLibrary</title>
+        <link rel = "stylesheet" href = "../../Style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="nav-corpo-log">
+            <div class="div-corpo">
+                <div class="modal-content">
+
+                    <section class = "up-titulo">
+                        <h2>Remover</h2>
+                    </section>
+
+                    <p align = "center">Erro ao remover dados</p>
+
+                    <p align="center"><a href="../../Screens/remover.php"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button></a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    <?php
     }
 ?>

@@ -4,6 +4,8 @@
     <title>MyLibrary</title>
     <link rel = "stylesheet" href = "../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src = "../Script/script.js"></script>
 </head>
 <body>
 
@@ -32,8 +34,8 @@
             <a class="nav-link" href="remover.php">Remover</a>
             </li>
         </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+        <form class="d-flex" role="search" method = "post" action = "pesquisarLivro.php">
+            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search" name = "pesquisar-livro">
             <button class="btn btn-success" type="submit">Buscar</button>
         </form>
         </div>

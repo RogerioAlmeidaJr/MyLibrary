@@ -36,12 +36,11 @@
                     <input type="date" class="form-control" id="exampleFormControlInput1" name = "data-livro" placeholder="insira a data de lançamento">
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary" id = "cadastrar">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary" id = "btnInserirLivro">Inserir</button>
                 </div>
             </form>
         </div>
     </div>
-    
 
 </body>
 </html>
